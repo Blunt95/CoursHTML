@@ -1,0 +1,63 @@
+/* Home page */
+
+
+p{
+    font-size: 10px;
+}
+
+/* Nav Menu */
+nav{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+div.burger{
+    background-image: url(images/burger.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    visibility: hidden;
+}
+div.open{
+    background-image: url(images/croix.png);
+
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+
+    nav{
+        flex-direction: column;
+        display: none;
+        height: 0px;
+        transition: 0.3s height;
+        
+    }
+    nav li {
+        text-align: center;
+    }
+
+    div.burger{
+        visibility: visible;
+    }
+
+    .open + nav {
+        display: block;
+        height: 100px;
+    }
+
+    p{
+        font-size: 5px;
+    }
+  }

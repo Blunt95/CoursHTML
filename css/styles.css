@@ -1,0 +1,65 @@
+/* On modifie la couleur du titre */
+
+h1 {
+    color:rgb(15, 12, 197);
+    font-size: 50sp;
+    text-align: center;
+    font-family: Comic sans ms;
+    text-decoration: underline; 
+}
+a.donate-button{
+    text-decoration: none;
+    color: black;
+    background:blueviolet;
+    padding: 10px;
+    transition: 0.3s all;
+}
+.donate-button:hover{
+    background-color: yellow;
+    color: black;
+    transition: 0.3s all;
+}
+p{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.redtext {
+    color: red;
+}
+
+p.greentext{
+    color: green;
+}
+
+p.yellowtext{
+    color: yellow;
+}
+
+p.yellowtext,p.greentext{
+    font-weight: bold;
+}
+/* On modifie la couleur d'arrière plan de la page */
+body {
+    background-color:darkslategrey;
+}
+
+/* Formulaire de contact */
+
+form{
+    background-color: aqua;
+    padding: 10px;
+    margin: 5px;
+}
+form label{
+    color:rgb(30, 28, 143);
+}
+
+form input , form textarea {
+    background-color: green;
+    color: rgb(15, 15, 23);
+}
+
+form input::placeholder, form textarea::placeholder {
+    color : red;
+    
+}
